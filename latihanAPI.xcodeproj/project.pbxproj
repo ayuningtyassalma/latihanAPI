@@ -15,6 +15,11 @@
 		361E66BD29C016BE00103B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361E66BB29C016BE00103B37 /* LaunchScreen.storyboard */; };
 		361E66C829C016BF00103B37 /* latihanAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66C729C016BF00103B37 /* latihanAPITests.swift */; };
 		361E66D329C016BF00103B37 /* latihanAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66D229C016BF00103B37 /* latihanAPIUITests.swift */; };
+		361E66E129C016D900103B37 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66E029C016D900103B37 /* Comment.swift */; };
+		361E66E329C0187E00103B37 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66E229C0187E00103B37 /* ApiService.swift */; };
+		361E66EC29C0208A00103B37 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66EB29C0208A00103B37 /* CommentViewModel.swift */; };
+		361E66EF29C02E8E00103B37 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66ED29C02E8E00103B37 /* CommentTableViewCell.swift */; };
+		361E66F029C02E8E00103B37 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361E66EE29C02E8E00103B37 /* CommentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		361E66CE29C016BF00103B37 /* latihanAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = latihanAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		361E66D229C016BF00103B37 /* latihanAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latihanAPIUITests.swift; sourceTree = "<group>"; };
 		361E66D429C016BF00103B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361E66E029C016D900103B37 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		361E66E229C0187E00103B37 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		361E66EB29C0208A00103B37 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		361E66ED29C02E8E00103B37 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		361E66EE29C02E8E00103B37 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +109,13 @@
 		361E66AF29C016BC00103B37 /* latihanAPI */ = {
 			isa = PBXGroup;
 			children = (
-				361E66B029C016BC00103B37 /* AppDelegate.swift */,
-				361E66B229C016BC00103B37 /* SceneDelegate.swift */,
-				361E66B429C016BC00103B37 /* ViewController.swift */,
-				361E66B629C016BC00103B37 /* Main.storyboard */,
+				361E66E429C01D0B00103B37 /* MODEL */,
+				361E66E829C01D5500103B37 /* VIEW */,
+				361E66E729C01D4100103B37 /* VIEW_MODEL */,
+				361E66EA29C01E2E00103B37 /* MAIN_DELEGATE */,
+				361E66E629C01D3100103B37 /* NETWORKING */,
+				361E66E929C01DF200103B37 /* STORYBOARD */,
 				361E66B929C016BE00103B37 /* Assets.xcassets */,
-				361E66BB29C016BE00103B37 /* LaunchScreen.storyboard */,
 				361E66BE29C016BE00103B37 /* Info.plist */,
 			);
 			path = latihanAPI;
@@ -126,6 +137,58 @@
 				361E66D429C016BF00103B37 /* Info.plist */,
 			);
 			path = latihanAPIUITests;
+			sourceTree = "<group>";
+		};
+		361E66E429C01D0B00103B37 /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				361E66E029C016D900103B37 /* Comment.swift */,
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
+		361E66E629C01D3100103B37 /* NETWORKING */ = {
+			isa = PBXGroup;
+			children = (
+				361E66E229C0187E00103B37 /* ApiService.swift */,
+			);
+			path = NETWORKING;
+			sourceTree = "<group>";
+		};
+		361E66E729C01D4100103B37 /* VIEW_MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				361E66EB29C0208A00103B37 /* CommentViewModel.swift */,
+			);
+			path = VIEW_MODEL;
+			sourceTree = "<group>";
+		};
+		361E66E829C01D5500103B37 /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				361E66B429C016BC00103B37 /* ViewController.swift */,
+			);
+			path = VIEW;
+			sourceTree = "<group>";
+		};
+		361E66E929C01DF200103B37 /* STORYBOARD */ = {
+			isa = PBXGroup;
+			children = (
+				361E66B629C016BC00103B37 /* Main.storyboard */,
+				361E66BB29C016BE00103B37 /* LaunchScreen.storyboard */,
+				361E66ED29C02E8E00103B37 /* CommentTableViewCell.swift */,
+				361E66EE29C02E8E00103B37 /* CommentTableViewCell.xib */,
+			);
+			path = STORYBOARD;
+			sourceTree = "<group>";
+		};
+		361E66EA29C01E2E00103B37 /* MAIN_DELEGATE */ = {
+			isa = PBXGroup;
+			children = (
+				361E66B029C016BC00103B37 /* AppDelegate.swift */,
+				361E66B229C016BC00103B37 /* SceneDelegate.swift */,
+			);
+			path = MAIN_DELEGATE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +297,7 @@
 				361E66BD29C016BE00103B37 /* LaunchScreen.storyboard in Resources */,
 				361E66BA29C016BE00103B37 /* Assets.xcassets in Resources */,
 				361E66B829C016BC00103B37 /* Main.storyboard in Resources */,
+				361E66F029C02E8E00103B37 /* CommentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361E66EC29C0208A00103B37 /* CommentViewModel.swift in Sources */,
 				361E66B529C016BC00103B37 /* ViewController.swift in Sources */,
+				361E66E329C0187E00103B37 /* ApiService.swift in Sources */,
+				361E66E129C016D900103B37 /* Comment.swift in Sources */,
+				361E66EF29C02E8E00103B37 /* CommentTableViewCell.swift in Sources */,
 				361E66B129C016BC00103B37 /* AppDelegate.swift in Sources */,
 				361E66B329C016BC00103B37 /* SceneDelegate.swift in Sources */,
 			);
