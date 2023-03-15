@@ -2,7 +2,7 @@
 //  latihanAPITests.swift
 //  latihanAPITests
 //
-//  Created by Phincon on 14/03/23.
+//  Created by Salma Ayu on 14/03/23.
 //
 
 import XCTest

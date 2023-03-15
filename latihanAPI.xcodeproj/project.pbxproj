@@ -20,6 +20,12 @@
 		361E66EC29C0208A00103B37 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66EB29C0208A00103B37 /* CommentViewModel.swift */; };
 		361E66EF29C02E8E00103B37 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E66ED29C02E8E00103B37 /* CommentTableViewCell.swift */; };
 		361E66F029C02E8E00103B37 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361E66EE29C02E8E00103B37 /* CommentTableViewCell.xib */; };
+		3649087A29C161360002B5F4 /* image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649087929C161360002B5F4 /* image.swift */; };
+		3649087C29C162260002B5F4 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649087B29C162260002B5F4 /* ImageViewModel.swift */; };
+		3649087E29C164FC0002B5F4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649087D29C164FC0002B5F4 /* ImageViewController.swift */; };
+		3649088129C171E20002B5F4 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649087F29C171E20002B5F4 /* ImageTableViewCell.swift */; };
+		3649088229C171E20002B5F4 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3649088029C171E20002B5F4 /* ImageTableViewCell.xib */; };
+		3649088529C175590002B5F4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649088429C175590002B5F4 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		361E66EB29C0208A00103B37 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		361E66ED29C02E8E00103B37 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		361E66EE29C02E8E00103B37 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		3649087929C161360002B5F4 /* image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image.swift; sourceTree = "<group>"; };
+		3649087B29C162260002B5F4 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		3649087D29C164FC0002B5F4 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		3649087F29C171E20002B5F4 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		3649088029C171E20002B5F4 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		3649088429C175590002B5F4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 		361E66AF29C016BC00103B37 /* latihanAPI */ = {
 			isa = PBXGroup;
 			children = (
+				3649088329C175480002B5F4 /* EXTENSION */,
 				361E66E429C01D0B00103B37 /* MODEL */,
 				361E66E829C01D5500103B37 /* VIEW */,
 				361E66E729C01D4100103B37 /* VIEW_MODEL */,
@@ -143,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				361E66E029C016D900103B37 /* Comment.swift */,
+				3649087929C161360002B5F4 /* image.swift */,
 			);
 			path = MODEL;
 			sourceTree = "<group>";
@@ -159,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				361E66EB29C0208A00103B37 /* CommentViewModel.swift */,
+				3649087B29C162260002B5F4 /* ImageViewModel.swift */,
 			);
 			path = VIEW_MODEL;
 			sourceTree = "<group>";
@@ -167,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				361E66B429C016BC00103B37 /* ViewController.swift */,
+				3649087D29C164FC0002B5F4 /* ImageViewController.swift */,
 			);
 			path = VIEW;
 			sourceTree = "<group>";
@@ -178,6 +194,8 @@
 				361E66BB29C016BE00103B37 /* LaunchScreen.storyboard */,
 				361E66ED29C02E8E00103B37 /* CommentTableViewCell.swift */,
 				361E66EE29C02E8E00103B37 /* CommentTableViewCell.xib */,
+				3649087F29C171E20002B5F4 /* ImageTableViewCell.swift */,
+				3649088029C171E20002B5F4 /* ImageTableViewCell.xib */,
 			);
 			path = STORYBOARD;
 			sourceTree = "<group>";
@@ -189,6 +207,14 @@
 				361E66B229C016BC00103B37 /* SceneDelegate.swift */,
 			);
 			path = MAIN_DELEGATE;
+			sourceTree = "<group>";
+		};
+		3649088329C175480002B5F4 /* EXTENSION */ = {
+			isa = PBXGroup;
+			children = (
+				3649088429C175590002B5F4 /* UIImageViewExtension.swift */,
+			);
+			path = EXTENSION;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3649088229C171E20002B5F4 /* ImageTableViewCell.xib in Resources */,
 				361E66BD29C016BE00103B37 /* LaunchScreen.storyboard in Resources */,
 				361E66BA29C016BE00103B37 /* Assets.xcassets in Resources */,
 				361E66B829C016BC00103B37 /* Main.storyboard in Resources */,
@@ -323,7 +350,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				361E66EC29C0208A00103B37 /* CommentViewModel.swift in Sources */,
+				3649087A29C161360002B5F4 /* image.swift in Sources */,
+				3649088529C175590002B5F4 /* UIImageViewExtension.swift in Sources */,
+				3649087E29C164FC0002B5F4 /* ImageViewController.swift in Sources */,
+				3649088129C171E20002B5F4 /* ImageTableViewCell.swift in Sources */,
 				361E66B529C016BC00103B37 /* ViewController.swift in Sources */,
+				3649087C29C162260002B5F4 /* ImageViewModel.swift in Sources */,
 				361E66E329C0187E00103B37 /* ApiService.swift in Sources */,
 				361E66E129C016D900103B37 /* Comment.swift in Sources */,
 				361E66EF29C02E8E00103B37 /* CommentTableViewCell.swift in Sources */,
